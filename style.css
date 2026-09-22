@@ -134,7 +134,7 @@ MAIN
 ================================================ */
 #main {
     background-color: #4db1ec;
-   background-image: url('../images/hero01.png');
+   background-image: url('./images/hero01.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
