@@ -95,7 +95,7 @@ DARK MODE BUTTON
         background: var(--grey);
         font-size: 1.25rem;
         box-shadow: 02px 8px rgba(0,0,0,.3);
-        transition: .3;
+        transition: .3s;
 
 }
 

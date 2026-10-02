@@ -96,7 +96,7 @@ tabBtns.forEach((tab) => {
         tabBtns.forEach((b) => b.classList.remove('active'));  //  1)모든 버튼 끄기
         tabPanels.forEach((p) => p.classList.remove('active')); // 2)모든 패널 끄기
 
-        //클릭한 버튼과, 그 버튼의 data-tab 값솨 같은 id를 가진 패널에 'active'를 붙인다.
+        //클릭한 버튼과, 그 버튼의 data-tab 값과 같은 id를 가진 패널에 'active'를 붙인다.
         tab.classList.add('active'); // 3) 클릭한 버튼 켜기
         document.getElementById(tab.dataset.tab).classList.add('active'); // 4) 짝 패널 켜기
    
