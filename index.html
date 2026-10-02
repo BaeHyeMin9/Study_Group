@@ -25,6 +25,7 @@
                     <ul class="main-nav">
                         <li><a href="#about">About</a></li>
                         <li><a href="#curriculum">curriculum</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#mentors">Mentors</a></li>
                         <li><a href="#apply">Apply</a></li>
                     </ul>
@@ -70,12 +71,16 @@
                 데모데이를 진행합니다
             </p>
             <img src="images/hero02.png" alt="스터디 진행모습">
-        </section>
-
+        
         <!-- Curriculum 영역 -->
         <section id="curriculum">
             <h2>Curriculum</h2>
-            <div>
+            <div class="tab-menu">
+                <button class="tab-btn active" data-tab="tab-front">Front-End</button>
+                <button class="tab-btn" data-tab="tab-back">Back-End</button>
+                <button class="tab-btn" data-tab="tab-launch">Launch</button>
+            </div>
+            <div class="tab-panel active" id="tab-front">
                 <table class="curriculum-table">
                     <tr>
                         <td class="week">1주</td>
@@ -89,6 +94,11 @@
                         <td class="week">3주</td>
                         <td class="content">React로 프론트엔드 화면 만들기</td>
                     </tr>
+                </table>
+            </div>
+                     <!-- 백엔드 패널 시작 -->
+                <div class="tab-panel" id="tab-back">
+                    <table class="curriculum-table">
                     <tr>
                         <td class="week">4주</td>
                         <td class="content">Node.js와 Express로 서버 만들기</td>
@@ -101,6 +111,11 @@
                         <td class="week">6주</td>
                         <td class="content">프론트엔드 - 백엔드 API 연동하기</td>
                     </tr>
+                    </table>
+                </div>
+                <!-- 배포 및 발표 패널 시작 -->
+            <div class="tab-panel" id="tab-launch">
+                <table class="curriculum-table">
                     <tr>
                         <td class="week">7주</td>
                         <td class="content">배포하기 (Vercel / Render)</td>
@@ -112,7 +127,17 @@
                 </table>
             </div>
         </section>
-
+        </section>
+        <section id="gallery" class="wrapper">
+            <h2>Gallery</h2>
+            <img class="gallery-main" src="images/gallery1.jpg" alt="스터디 사진1">
+            <ul class="gallery-thumbs">
+                <li><img src="images/gallery1.jpg" alt="스터디 진행모습1"></li>
+                <li><img src="images/gallery2.jpg" alt="스터디 진행모습2"></li>
+                <li><img src="images/gallery3.jpg" alt="스터디 진행모습3"></li>
+                <li><img src="images/gallery4.jpg" alt="스터디 진행모습4"></li>
+            </ul>
+        </section>
         <!-- Mentors영역 -->
         <section id="mentors">
             <h2>Mentors</h2>
